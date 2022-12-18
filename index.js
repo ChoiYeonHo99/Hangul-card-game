@@ -68,7 +68,7 @@ io.on('connection', function (socket) {
     socket.on('turnEnd', function (id, word, type) {
         lastTurn = id;
         lastWord = word;
-        csEntry = true;
+        criticalSection = true;
         socket.broadcast.emit('turnEnd', type, word);
     });
     socket.on('firstDrop', function () {
