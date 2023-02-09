@@ -168,7 +168,7 @@ class playGame extends Phaser.Scene {
                 });
                 card.displayWidth = gameOptions.cardWidth * gameOptions.blankSizeRatio;
                 card.displayHeight = gameOptions.cardHeight * gameOptions.blankSizeRatio;
-                card.value = value;
+                card.value = self.deckArray[value];
                 card.i = 4;
                 card.j = 4;
                 self.boardGroup.add(card);
